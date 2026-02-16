@@ -50,14 +50,68 @@
         </article>
     </aside>
 
+    <section id="habilidades">
+        <h2>HABILIDADES E TECNOLOGIAS</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Capaz de construir estruturas de paginas web semanticas e responsivas</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediário</td>
+                    <td>Experiência com flexbox, grid e JavaScript</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
     <footer>
         <section id="contato">
             <h2>CONTATO</h2>
             <p> Tem um projeto em mente? Entre em contato </p>
-            <address>
-                Email: <a href="mailto:marinabandeira12@gmail.com">marinabandeira12@gmail.com</a> <br>
-                Telefone: <a href="tel:+5548988651180">(48)988651180</a>
-            </address>
+
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required> <br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone"> <br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">ORÇAMENTO</option>
+                    <option value="duvida">DÚVIDA</option>
+                    <option value="outro">OUTRO</option>
+
+                </select>
+                <br>
+
+                <input type="checkbox" name="novidades" id="novidades">
+                <label for="novidades">Quero ficar por dentro das novidades</label> <br>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="10" rows="5"></textarea>
+                <br>
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
         </section>
     </footer>
 
